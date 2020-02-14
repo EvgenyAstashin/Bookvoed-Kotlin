@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@+id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.astashin.bookvoed.ui.splash.SplashFragment"
+        android:label="Splash Fragment"
+        tools:layout="@layout/fragment_splash">
+
+        <action
+            android:id="@+id/go_to_login"
+            app:destination="@id/loginFragment" />
+
+        <action
+            android:id="@+id/go_to_main"
+            app:destination="@id/mainFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.astashin.bookvoed.ui.registration.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+
+        <action
+            android:id="@+id/go_to_main"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.astashin.bookvoed.ui.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/go_to_registration"
+            app:destination="@id/registrationFragment" />
+
+        <action
+            android:id="@+id/action_loginFragment_to_navigationDrawerFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.astashin.bookvoed.ui.drawer.MainFragment"
+        android:label="fragment_navigation_drawer"
+        tools:layout="@layout/fragment_navigation_drawer" />
+
+</navigation>
