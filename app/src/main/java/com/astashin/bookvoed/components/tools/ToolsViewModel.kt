@@ -1,4 +1,4 @@
-package com.astashin.bookvoed.ui.tools
+package com.astashin.bookvoed.components.tools
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

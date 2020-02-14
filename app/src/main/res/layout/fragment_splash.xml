@@ -7,13 +7,13 @@
         <import type="android.view.View"/>
         <variable
             name="viewmodel"
-            type="com.astashin.bookvoed.ui.splash.SplashViewModel" />
+            type="com.astashin.bookvoed.components.splash.SplashViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.splash.SplashActivity"
+        tools:context=".components.splash.SplashActivity"
         android:padding="16dp">
 
         <ImageView

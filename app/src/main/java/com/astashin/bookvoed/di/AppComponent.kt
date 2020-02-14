@@ -1,7 +1,7 @@
 package com.astashin.bookvoed.di
 
 import android.content.Context
-import com.astashin.bookvoed.ui.login.LoginActivity
+import com.astashin.bookvoed.components.login.LoginActivity
 import dagger.BindsInstance
 import dagger.Component
 import javax.inject.Singleton

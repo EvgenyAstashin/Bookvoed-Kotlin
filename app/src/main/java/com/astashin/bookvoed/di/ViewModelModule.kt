@@ -4,9 +4,9 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.astashin.bookvoed.ViewModelFactory
 import com.astashin.bookvoed.ViewModelKey
-import com.astashin.bookvoed.ui.login.LoginViewModel
-import com.astashin.bookvoed.ui.registration.RegistrationViewModel
-import com.astashin.bookvoed.ui.splash.SplashViewModel
+import com.astashin.bookvoed.components.login.LoginViewModel
+import com.astashin.bookvoed.components.registration.RegistrationViewModel
+import com.astashin.bookvoed.components.splash.SplashViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap

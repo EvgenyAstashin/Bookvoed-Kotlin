@@ -1,4 +1,4 @@
-package com.astashin.bookvoed.ui.tools
+package com.astashin.bookvoed.components.tools
 
 import android.os.Bundle
 import android.view.LayoutInflater

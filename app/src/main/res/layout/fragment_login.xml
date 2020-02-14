@@ -6,14 +6,14 @@
     <data>
         <variable
             name="viewmodel"
-            type="com.astashin.bookvoed.ui.login.LoginViewModel" />
+            type="com.astashin.bookvoed.components.login.LoginViewModel" />
 
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.login.LoginActivity"
+        tools:context=".components.login.LoginActivity"
         android:padding="16dp">
 
         <ImageView

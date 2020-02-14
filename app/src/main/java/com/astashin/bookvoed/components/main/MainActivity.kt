@@ -1,4 +1,4 @@
-package com.astashin.bookvoed.ui.main
+package com.astashin.bookvoed.components.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

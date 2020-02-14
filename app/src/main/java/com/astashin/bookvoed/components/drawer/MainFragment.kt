@@ -1,4 +1,4 @@
- package com.astashin.bookvoed.ui.drawer
+ package com.astashin.bookvoed.components.drawer
 
 
 import android.os.Bundle

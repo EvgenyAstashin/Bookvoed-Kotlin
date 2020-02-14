@@ -1,4 +1,4 @@
-package com.astashin.bookvoed.ui.splash
+package com.astashin.bookvoed.components.splash
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

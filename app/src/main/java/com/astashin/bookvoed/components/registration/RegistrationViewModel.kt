@@ -1,4 +1,4 @@
-package com.astashin.bookvoed.ui.registration
+package com.astashin.bookvoed.components.registration
 
 import androidx.lifecycle.ViewModel
 import javax.inject.Inject

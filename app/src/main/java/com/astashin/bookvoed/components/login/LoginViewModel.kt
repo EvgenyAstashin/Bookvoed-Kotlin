@@ -1,4 +1,4 @@
-package com.astashin.bookvoed.ui.login
+package com.astashin.bookvoed.components.login
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
