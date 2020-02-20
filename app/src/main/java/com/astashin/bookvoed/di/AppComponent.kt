@@ -1,7 +1,8 @@
 package com.astashin.bookvoed.di
 
 import android.content.Context
-import com.astashin.bookvoed.components.login.LoginActivity
+import com.astashin.bookvoed.components.login.LoginFragment
+import com.astashin.bookvoed.components.splash.SplashFragment
 import dagger.BindsInstance
 import dagger.Component
 import javax.inject.Singleton
@@ -15,9 +16,7 @@ interface AppComponent {
         fun create(@BindsInstance context: Context): AppComponent
     }
 
-    fun inject(activity: SplashActivity)
+    fun inject(fragment: SplashFragment)
 
-    fun inject(activity: LoginActivity)
-
-    fun inject(activity: RegistrationActivity)
+    fun inject(fragment: LoginFragment)
 }

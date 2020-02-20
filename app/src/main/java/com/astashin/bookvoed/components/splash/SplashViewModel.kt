@@ -1,26 +1,34 @@
 package com.astashin.bookvoed.components.splash
 
+import android.app.PendingIntent
+import android.content.Intent
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.astashin.bookvoed.util.asMutable
 import com.astashin.bookvoed.network.UserApi
 import com.astashin.bookvoed.user.UserManager
+import com.astashin.bookvoed.user.UserManagerImpl
 import io.reactivex.disposables.CompositeDisposable
 import javax.inject.Inject
 
 class SplashViewModel @Inject constructor(
-    private val userManager: UserManager,
+    private val userManager: UserManagerImpl,
     private val userApi: UserApi
 ) : ViewModel() {
 
     private val compositeDisposable = CompositeDisposable()
 
-    val userLoggedIn: LiveData<Boolean> = MutableLiveData<Boolean>()
-    val loading: LiveData<Boolean> = MutableLiveData<Boolean>(false)
+    private val _userLoggedIn = MutableLiveData<Boolean>()
+    private val _loading = MutableLiveData<Boolean>(false)
 
-    init {
-        checkUser()
+    val userLoggedIn: LiveData<Boolean> = _userLoggedIn
+    val loading: LiveData<Boolean> = _loading
+
+    fun checkUser() {
+        if (userManager.isUserLoggedIn())
+            loadUser()
+        else
+            _userLoggedIn.value = false
     }
 
     override fun onCleared() {
@@ -28,14 +36,11 @@ class SplashViewModel @Inject constructor(
         compositeDisposable.dispose()
     }
 
-    private fun checkUser() {
-        if (userManager.isUserLoggedIn())
-            loadUser()
-        else
-            userLoggedIn.asMutable().value = false
-    }
-
     private fun loadUser() {
-        loading.asMutable().value = true
+        _loading.value = true
+        _userLoggedIn.value = true
+        PendingIntent
+        Intent
+        HashMap
     }
 }

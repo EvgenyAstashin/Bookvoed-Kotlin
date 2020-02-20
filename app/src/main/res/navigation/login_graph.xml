@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_graph"
+    app:startDestination="@id/loginFragment"
+    tools:ignore="UnusedNavigation">
+
+    <action android:id="@+id/login_finish"
+        app:popUpTo="@id/login_graph"
+        app:popUpToInclusive="true"  />
+
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.astashin.bookvoed.components.registration.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+
+<!--        <action-->
+<!--            android:id="@+id/go_to_main"-->
+<!--            app:destination="@id/main_graph" />-->
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.astashin.bookvoed.components.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/go_to_registration"
+            app:destination="@id/registrationFragment" />
+
+<!--        <action-->
+<!--            android:id="@+id/go_to_main"-->
+<!--            app:destination="@id/main_graph" />-->
+    </fragment>
+
+</navigation>

@@ -10,4 +10,7 @@ interface UserApi {
 
     @POST("/users/login")
     fun login(@Body request: LoginRegistrationRequest): Flowable<LoginRegistrationResponse>
+
+    @POST("/users/registration")
+    fun registration(@Body request: LoginRegistrationRequest): Flowable<LoginRegistrationResponse>
 }
